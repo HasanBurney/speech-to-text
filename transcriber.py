@@ -53,8 +53,8 @@ def speak_to_client(msg):
     # audio_data = output["audio"]
     # sampling_rate = output["sampling_rate"]
 
-    # if audio_data.ndim > 1:  # Checks if the audio has multiple channels
-    #     audio_data = np.mean(audio_data, axis=1)  # Averages the channels to create mono output
+    # if audio_data.ndim > 1: 
+    #     audio_data = np.mean(audio_data, axis=1)  
 
     # sd.play(audio_data, samplerate=sampling_rate)
     # sd.wait()
@@ -76,7 +76,6 @@ def check_availability(time):
     with open(SLOTS_FILE, "r") as file:
         slots = file.readlines()
     
-    # Ensure both `time` and `slot` are strings for compatibility
     return not any(str(time) in str(slot) for slot in slots)
 
 
