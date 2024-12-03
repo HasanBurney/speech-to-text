@@ -21,13 +21,20 @@
 <pre><code>pip install -r requirements.txt
 </code></pre>
 
-<h3><strong>Step 3: Start Ollama Service</strong></h3>
+<h3><strong>Step 3: Download Ollama for Windows</strong></h3>
+To download Ollama for Windows, follow the link below:
+<pre><code>
+https://ollama.com/download/windows
+</code></pre>
+
+<h3><strong>Step 4: Start Ollama Service</strong></h3>
 <pre><code>ollama pull llama3.2
 </code></pre>
 <pre><code>ollama serve
 </code></pre>
 
-<h3><strong>Step 4: Run the Script</strong></h3>
+
+<h3><strong>Step 5: Run the Script</strong></h3>
 <pre><code>python transcriber.py
 </code></pre>
 
